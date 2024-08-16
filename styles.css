@@ -6,7 +6,7 @@
 }
 
 body {
-    font-family: 'Georgia', serif; /* Changed to a more elegant serif font */
+    font-family: 'Georgia', serif; /* Elegant serif font */
     line-height: 1.8; /* Increased line height for readability */
     background-color: #fafafa; /* Light, neutral background */
     color: #333; /* Subtle text color */
@@ -88,9 +88,19 @@ footer {
 }
 
 /* Responsive Design */
+
+/* Tablet and smaller devices (max-width: 768px) */
 @media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
     header h1 {
         font-size: 2.5rem;
+    }
+
+    header nav ul {
+        text-align: center;
     }
 
     header nav ul li {
@@ -100,5 +110,46 @@ footer {
 
     section {
         padding: 20px;
+    }
+
+    section h2 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 1.1rem;
+    }
+}
+
+/* Mobile devices (max-width: 480px) */
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header nav ul li {
+        margin-bottom: 10px;
+    }
+
+    section h2 {
+        font-size: 1.8rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+}
+
+/* Ensure images are responsive */
+img {
+    max-width: 100%; /* Make the image scale down proportionally */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Mobile devices (max-width: 480px) */
+@media (max-width: 480px) {
+    img {
+        width: 100%; /* Force images to fit within the screen width */
+        height: auto; /* Maintain aspect ratio */
     }
 }
