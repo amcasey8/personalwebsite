@@ -1,0 +1,104 @@
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Georgia', serif; /* Changed to a more elegant serif font */
+    line-height: 1.8; /* Increased line height for readability */
+    background-color: #fafafa; /* Light, neutral background */
+    color: #333; /* Subtle text color */
+    padding: 20px;
+}
+
+/* Header Styling */
+header {
+    background: #ffffff; /* White background for a clean look */
+    color: #333; /* Muted text color */
+    padding: 40px 0;
+    text-align: center;
+    border-bottom: 1px solid #e5e5e5; /* Subtle border at the bottom */
+}
+
+header h1 {
+    font-size: 3rem; /* Larger, bolder title */
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #2c3e50; /* Darker blue-gray for text */
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-right: 25px;
+}
+
+header nav ul li a {
+    font-size: 1rem;
+    color: #2c3e50; /* Consistent dark blue-gray for links */
+    text-decoration: none;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #e74c3c; /* Soft red hover effect */
+}
+
+/* Section Styling */
+section {
+    margin: 60px 0;
+    padding: 40px;
+    background: #ffffff; /* White background for content sections */
+    border-radius: 12px; /* Softer corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Softer, more diffused shadow */
+}
+
+section h2 {
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+    font-weight: 400;
+    color: #2c3e50;
+}
+
+p {
+    margin-bottom: 20px;
+    font-size: 1.2rem; /* Slightly larger font size for body text */
+    color: #555555; /* Softer gray for paragraph text */
+}
+
+/* Blog Section Styling */
+#blog {
+    padding: 40px;
+}
+
+/* Footer Styling */
+footer {
+    padding: 20px 0;
+    text-align: center;
+    color: #777777; /* Muted gray for footer text */
+    font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    header nav ul li {
+        display: block;
+        margin-bottom: 15px;
+    }
+
+    section {
+        padding: 20px;
+    }
+}
