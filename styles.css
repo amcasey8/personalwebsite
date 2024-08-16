@@ -152,4 +152,47 @@ img {
         width: 100%; /* Force images to fit within the screen width */
         height: auto; /* Maintain aspect ratio */
     }
+    /* Google Form Styling */
+iframe {
+    max-width: 100%; /* Make the form responsive */
+    height: auto;
+    border: none; /* Remove borders if any */
+}
+
+/* Mobile devices (max-width: 480px) */
+@media (max-width: 480px) {
+    iframe {
+        width: 100%; /* Make the form fit the mobile screen width */
+        height: auto; /* Adjust height automatically */
+    }
+
+    /* Constrain the footer navigation */
+    footer {
+        padding: 10px 0;
+    }
+
+    footer a {
+        display: block; /* Stack the links vertically */
+        margin-bottom: 10px;
+        font-size: 1rem; /* Adjust font size */
+    }
+
+    /* Bottom navigation (additional info section) */
+    #additional-info {
+        flex-direction: column; /* Stack links vertically on mobile */
+        align-items: center; /* Center the links */
+    }
+
+    #additional-info ul {
+        flex-direction: column; /* Vertical layout for the navigation */
+        gap: 10px; /* Space between the links */
+    }
+
+    #additional-info ul li a {
+        width: 100%; /* Make navigation links full width */
+        text-align: center; /* Center text inside the links */
+        padding: 10px; /* Add more padding for better touch interaction */
+    }
+}
+
 }
